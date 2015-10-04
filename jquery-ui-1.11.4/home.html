@@ -37,10 +37,11 @@
 		<input type="radio" id="radio1" name="radio" onclick="update1()" checked="checked"><label for="radio1">Home</label>
 		<input type="radio" id="radio6" name="radio" onclick="update6()"><label for="radio6">Getting Involved</label>
 		<input type="radio" id="radio2" name="radio" onclick="update2()"><label for="radio2">Games</label>
-		<input type="radio" id="radio3" name="radio" onclick="update3()"><label for="radio3">Women in Games</label>
+		<input type="radio" id="radio3" name="radio" onclick="update3()"><label for="radio3">Historical Women in Games</label>
 		<input type="radio" id="radio4" name="radio" onclick="update4()"><label for="radio4">Meet Developers</label>
 		<input type="radio" id="radio5" name="radio" onclick="update5()"><label for="radio5">Bloggers</label>
 		<input type="radio" id="radio7" name="radio" onclick="update7()"><label for="radio7">About Us</label>
+		<input type="radio" id="radio8" name="radio" onclick="update8()"><label for="radio8">News</label>
 	</div>
 </form>
 
@@ -91,6 +92,11 @@
 	function update7(){
 	
 		var loc = "AboutUs.html";
+        $('#myframe').attr('src', loc);
+    }
+	function update8(){
+	
+		var loc = "news.html";
         $('#myframe').attr('src', loc);
     }
 </script>
