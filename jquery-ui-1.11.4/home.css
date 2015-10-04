@@ -1,6 +1,8 @@
 body{
 		font: 62.5% "Trebuchet MS", sans-serif;
 		margin: 50px;
+		background-color:white;
+		
 	}
 	.demoHeaders {
 		margin-top: 2em;
@@ -18,10 +20,13 @@ body{
 		margin-top: -8px;
 	}
 	
-	h1{
+	h1,h2,h3{
 		font-family: 'Press Start 2P', cursive;
 		
+		
 	}
+	
+
 	#icons {
 		margin: 0;
 		padding: 0;
@@ -42,6 +47,10 @@ body{
 	
 	.fakewindowcontain .ui-widget-overlay {
 		position: absolute;
+	}
+	
+	p{
+		font-size:medium;
 	}
 	select {
 		width: 200px;

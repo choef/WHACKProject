@@ -4,6 +4,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 	<title>Games4Dames</title>
+	
+	<style>
+	body{
+	background-image:url("images/background.jpg");
+	background-size: cover;
+	}
+	
+	h1,h2,h3{
+		color: white;
+		font-size: large;
+	}
+	p{
+		color:white;
+		font-size: medium;
+	}
+	
+	</style>
 	<link href="jquery-ui.css" rel="stylesheet">
 	<link rel="stylesheet" href="home.css">
 	<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
@@ -18,17 +35,18 @@
 <form style="margin-top: 1em;">
 	<div id="radioset">
 		<input type="radio" id="radio1" name="radio" onclick="update1()" checked="checked"><label for="radio1">Home</label>
+		<input type="radio" id="radio6" name="radio" onclick="update6()"><label for="radio6">Getting Involved</label>
 		<input type="radio" id="radio2" name="radio" onclick="update2()"><label for="radio2">Games</label>
 		<input type="radio" id="radio3" name="radio" onclick="update3()"><label for="radio3">Women in Games</label>
 		<input type="radio" id="radio4" name="radio" onclick="update4()"><label for="radio4">Meet Developers</label>
 		<input type="radio" id="radio5" name="radio" onclick="update5()"><label for="radio5">Bloggers</label>
-		<input type="radio" id="radio6" name="radio" onclick="update6()"><label for="radio6">News</label>
+		
 		<input type="radio" id="radio7" name="radio" onclick="update7()"><label for="radio7">About Us</label>
 	</div>
 </form>
 
 
-<iframe src="homehome.html" id="myframe" style="position:fixed; top:130px; left:50px; bottom:0px; right:20px; width:90%; height:80%;  overflow:hidden; z-index:999999;">
+<iframe src="homehome.html" id="myframe" style="position:fixed; top:142px; left:50px; bottom:0px; right:20px; width:90%; height:80%;  overflow:hidden; z-index:999999;">
 
 </iframe>
 
@@ -50,7 +68,7 @@
 	
 	function update3(){
 	
-		var loc = "\history\\WomenInGames.html";
+		var loc = "WomenInGames.html";
         $('#myframe').attr('src', loc);
     }
 	
@@ -68,7 +86,7 @@
 	
 	function update6(){
 	
-		var loc = "Gamers.html";
+		var loc = "BabyGamersStarterPack.html";
         $('#myframe').attr('src', loc);
     }
 </script>
