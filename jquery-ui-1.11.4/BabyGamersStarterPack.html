@@ -7,7 +7,15 @@
 <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class='Baby Gamers Starter Pack'>
+	<!-- Tabs -->
+<h2 class="demoHeaders">Tabs</h2>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">As a Gamer</a></li>
+		<li><a href="#tabs-2">Behind the Scenes</a></li>
+	</ul>
+	<div id="tabs-1">
+		<div class='Baby Gamers Starter Pack'>
 		<h1>Baby Gamers Starter Pack</h1>
 <p>So you want to start gaming, huh?
 <br>
@@ -65,5 +73,152 @@ And remember...
 
 </p>
 	</div>
+	
+	</div>
+	<div id="tabs-2">
+		<h1>Want To Get Into The Industry?</h1>
+		<div>
+			<p>We want more women in games! And women want to be in games! So what's stopping us?<br>Well, a lot
+			the problem is that society doesn't exactly make it easy for us. But, no worries, because no matter
+			your skill level, there are people who have made resources to help you.</p>
+		</div>
+		<div>
+			<ul>
+				<li><b>Interested in developping but don't know how to code?</b><br>Check out 
+				<a href="https://www.codecademy.com/">Code Academy</a>! Lots of resources for learning how to code,
+				which is essential to video game development. You can also take a look at <a href="http://www.w3schools.com/">W3Schools</a>
+				for more coding references.</li>
+				<li><b>Still in high school and looking for an intensive program?</b><br><a href="http://girlswhocode.com/programs/">Girls Who Code</a>
+				has an opportunity that's right for you. Connect with peers and mentors to build an app and learn valuable skills in this
+				immersive program.</li>
+				<li><b>Looking for opportunities as a developper?</b><br><a href="http://www.gamedevmap.com/"> Game Dev Map</a> shows your where the
+				action is! If you know what you're looking for, don't be afraid to apply.</li>
+				<li><b>Want more opportunities specific to women in the games industry?</b> <br><a href="http://www.womeningamesjobs.com/">
+				Women in Games Jobs (WIGJ)</a> is a network specifically for women interested in the industry; they'll hold panels,
+				fairs, and other events, and are present in multiple countries, including the USA, India, Japan, France and China.
+				Check out your local chapter, or contact them online!</li>
+			</ul>
+		</div>
+	
+	</div>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
 </body>
 </html>
