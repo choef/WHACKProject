@@ -48,6 +48,10 @@ body{
 	.fakewindowcontain .ui-widget-overlay {
 		position: absolute;
 	}
+	
+	p{
+		font-size:medium;
+	}
 	select {
 		width: 200px;
 	}
