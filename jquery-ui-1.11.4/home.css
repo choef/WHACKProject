@@ -17,6 +17,11 @@ body{
 		top: 50%;
 		margin-top: -8px;
 	}
+	
+	h1{
+		font-family: 'Press Start 2P', cursive;
+		
+	}
 	#icons {
 		margin: 0;
 		padding: 0;
