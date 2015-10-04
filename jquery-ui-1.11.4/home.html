@@ -17,20 +17,61 @@
 
 <form style="margin-top: 1em;">
 	<div id="radioset">
-		<input type="radio" id="radio1" name="radio"><label for="radio1">Home</label>
-		<input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Gamers</label>
-		<input type="radio" id="radio3" name="radio"><label for="radio3">Watch</label>
-		<input type="radio" id="radio4" name="radio"><label for="radio4">Meet Developers</label>
-		<input type="radio" id="radio5" name="radio"><label for="radio5">Game Characters</label>
-		<input type="radio" id="radio6" name="radio"><label for="radio6">News</label>
-		<input type="radio" id="radio7" name="radio"><label for="radio7">About Us</label>
+		<input type="radio" id="radio1" name="radio" onclick="update1()" checked="checked"><label for="radio1">Home</label>
+		<input type="radio" id="radio2" name="radio" onclick="update2()"><label for="radio2">Gamers</label>
+		<input type="radio" id="radio3" name="radio" onclick="update3()"><label for="radio3">Watch</label>
+		<input type="radio" id="radio4" name="radio" onclick="update4()"><label for="radio4">Meet Developers</label>
+		<input type="radio" id="radio5" name="radio" onclick="update5()"><label for="radio5">Game Characters</label>
+		<input type="radio" id="radio6" name="radio" onclick="update6()"><label for="radio6">News</label>
+		<input type="radio" id="radio7" name="radio" onclick="update7()"><label for="radio7">About Us</label>
 	</div>
 </form>
 
 
-<iframe src="Gamers.html" style="position:fixed; top:130px; left:50px; bottom:0px; right:20px; width:90%; height:90%;  overflow:hidden; z-index:999999;">
+<iframe src="Gamers.html" id="myframe" style="position:fixed; top:130px; left:50px; bottom:0px; right:20px; width:90%; height:90%;  overflow:hidden; z-index:999999;">
 
 </iframe>
+
+<script>
+    function update1(){
+	
+		var loc = "Gamers.html";
+		$('#myframe').attr('src', loc);
+
+      
+    }
+	
+	function update2(){
+		
+		var loc = "PlayingGames.html";
+		$('#myframe').attr('src', loc);
+        
+    }
+	
+	function update3(){
+	
+		var loc = "Gamers.html";
+        $('#myframe').attr('src', loc);
+    }
+	
+	function update4(){
+	
+		var loc = "Gamers.html";
+        $('#myframe').attr('src', loc);
+    }
+	
+	function update5(){
+	
+		var loc = "Gamers.html";
+        $('#myframe').attr('src', loc);
+    }
+	
+	function update6(){
+	
+		var loc = "Gamers.html";
+        $('#myframe').attr('src', loc);
+    }
+</script>
 	
 
 
